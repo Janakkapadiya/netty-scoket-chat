@@ -1,11 +1,17 @@
 package com.broadcastsocket.demo.Model;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
-@Data
+@Setter
+@ToString
 @Getter
 @NoArgsConstructor
 public class Message {
+
+    private String userName;
     private MessageType type;
     private String message;
 
