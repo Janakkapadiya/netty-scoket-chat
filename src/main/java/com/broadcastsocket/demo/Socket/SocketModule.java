@@ -14,7 +14,7 @@ import java.nio.charset.StandardCharsets;
 
 @Component
 @Slf4j
-public class SocketModule {
+public class SocketModule{
 
     private final SocketIOServer server;
     private final SocketService socketService;
@@ -47,7 +47,7 @@ public class SocketModule {
         return client -> log.info("Client[{}] - Disconnected from socket", URLEncoder.encode(client.getSessionId().toString(), StandardCharsets.UTF_8));
     }
 
-//    public SocketIOServer getServer() {
-//        return server;
-//    }
+    public SocketIOServer getServer() {
+        return server;
+    }
 }
