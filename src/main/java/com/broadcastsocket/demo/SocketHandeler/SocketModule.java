@@ -16,6 +16,7 @@ import org.springframework.stereotype.Component;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 
@@ -45,13 +46,15 @@ public class SocketModule{
 
     private ConnectListener onConnected() {
         return client -> {
-            String room = client.getHandshakeData().getSingleUrlParam("room");  // "room" = a or b or ....
-
-            socketService.rooms(room);
-            client.joinRoom(room);
+            String room = client.getHandshakeData().getSingleUrlParam("room");  // paraEnds
+            String[] rooms = room.split(",");
+            for(String s : rooms)
+            {
+                socketService.rooms(s);
+                client.joinRoom(s);
+            }
             log.info("Socket ID [{}]  Connected to socket", URLEncoder.encode(client.getSessionId().toString(),StandardCharsets.UTF_8));
         };
-
     }
 
 
