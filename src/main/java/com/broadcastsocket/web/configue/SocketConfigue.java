@@ -1,4 +1,4 @@
-package com.broadcastsocket.demo.configue;
+package com.broadcastsocket.web.configue;
 
 import com.corundumstudio.socketio.SocketIOServer;
 import org.springframework.beans.factory.annotation.Value;
