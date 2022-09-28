@@ -1,4 +1,4 @@
-package com.broadcastsocket.web.Model;
+package com.broadcastsocket.web.model;
 
 
 import lombok.AllArgsConstructor;
