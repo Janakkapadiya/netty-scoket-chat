@@ -1,7 +1,7 @@
 package com.broadcastsocket.web.Service;
 
-import com.broadcastsocket.web.Model.User;
 import com.broadcastsocket.web.Repo.UserRepository;
+import com.broadcastsocket.web.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.userdetails.UserDetails;

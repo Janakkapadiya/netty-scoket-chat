@@ -1,8 +1,8 @@
 package com.broadcastsocket.web.Service;
 
-import com.broadcastsocket.web.Model.RoomType;
-import com.broadcastsocket.web.Model.Rooms;
 import com.broadcastsocket.web.Repo.RoomsRepository;
+import com.broadcastsocket.web.model.RoomType;
+import com.broadcastsocket.web.model.Rooms;
 import com.corundumstudio.socketio.SocketIOClient;
 import com.mongodb.MongoCommandException;
 import com.mongodb.MongoWriteException;
