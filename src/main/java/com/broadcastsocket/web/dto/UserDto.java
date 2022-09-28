@@ -1,4 +1,4 @@
-package com.broadcastsocket.web.Dto;
+package com.broadcastsocket.web.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
