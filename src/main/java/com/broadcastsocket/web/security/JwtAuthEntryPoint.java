@@ -1,7 +1,8 @@
-package com.broadcastsocket.web.Security;
+package com.broadcastsocket.web.security;
 
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.stereotype.Component;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;

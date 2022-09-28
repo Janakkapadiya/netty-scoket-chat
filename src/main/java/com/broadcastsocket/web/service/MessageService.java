@@ -1,9 +1,9 @@
-package com.broadcastsocket.web.Service;
+package com.broadcastsocket.web.service;
 
-import com.broadcastsocket.web.Repo.MessageRepository;
-import com.broadcastsocket.web.Repo.RoomsRepository;
 import com.broadcastsocket.web.model.Message;
 import com.broadcastsocket.web.model.MessageType;
+import com.broadcastsocket.web.repo.MessageRepository;
+import com.broadcastsocket.web.repo.RoomsRepository;
 import com.corundumstudio.socketio.SocketIOClient;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

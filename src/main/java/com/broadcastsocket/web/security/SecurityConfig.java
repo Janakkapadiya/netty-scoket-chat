@@ -1,4 +1,4 @@
-package com.broadcastsocket.web.Security;
+package com.broadcastsocket.web.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

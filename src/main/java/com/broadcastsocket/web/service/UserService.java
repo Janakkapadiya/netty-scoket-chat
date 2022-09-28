@@ -1,7 +1,7 @@
-package com.broadcastsocket.web.Service;
+package com.broadcastsocket.web.service;
 
-import com.broadcastsocket.web.Repo.UserRepository;
 import com.broadcastsocket.web.model.User;
+import com.broadcastsocket.web.repo.UserRepository;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 

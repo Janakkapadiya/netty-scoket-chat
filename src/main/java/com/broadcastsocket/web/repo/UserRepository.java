@@ -1,4 +1,4 @@
-package com.broadcastsocket.web.Repo;
+package com.broadcastsocket.web.repo;
 
 import com.broadcastsocket.web.model.User;
 import org.springframework.data.mongodb.repository.MongoRepository;

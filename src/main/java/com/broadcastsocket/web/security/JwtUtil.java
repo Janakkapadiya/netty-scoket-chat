@@ -1,4 +1,4 @@
-package com.broadcastsocket.web.Security;
+package com.broadcastsocket.web.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
