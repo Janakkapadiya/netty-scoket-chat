@@ -1,8 +1,8 @@
 package com.broadcastsocket.web.Controller;
 
-import com.broadcastsocket.web.Model.User;
 import com.broadcastsocket.web.Service.UserService;
-import com.broadcastsocket.web.Dto.UserDto;
+import com.broadcastsocket.web.dto.UserDto;
+import com.broadcastsocket.web.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

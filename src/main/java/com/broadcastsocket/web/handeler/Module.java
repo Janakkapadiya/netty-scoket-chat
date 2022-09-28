@@ -1,10 +1,10 @@
-package com.broadcastsocket.web.Handeler;
+package com.broadcastsocket.web.handeler;
 
-import com.broadcastsocket.web.Model.Message;
-import com.broadcastsocket.web.Model.Rooms;
 import com.broadcastsocket.web.Repo.RoomsRepository;
 import com.broadcastsocket.web.Service.MessageService;
 import com.broadcastsocket.web.Service.RoomService;
+import com.broadcastsocket.web.model.Message;
+import com.broadcastsocket.web.model.Rooms;
 import com.corundumstudio.socketio.SocketIOServer;
 import com.corundumstudio.socketio.listener.ConnectListener;
 import com.corundumstudio.socketio.listener.DataListener;
@@ -38,7 +38,6 @@ public class Module {
         server.addDisconnectListener(onDisconnected());
         server.addEventListener("send_message", Message.class, onChatReceived());
         server.addEventListener("create_room", Rooms.class, onCreatingRoom());
-
     }
 
     private DataListener<Message> onChatReceived() {
@@ -68,7 +67,6 @@ public class Module {
             }
         };
     }
-
     private DataListener<Rooms> onCreatingRoom() {
         return (senderClient, data, eventName) -> roomService.createRoom(data, "get_room", senderClient);
     }
